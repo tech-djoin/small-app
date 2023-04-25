@@ -1,0 +1,19 @@
+{
+    "name": "tech-djoin/small-app",
+    "description": "This is small package app",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "TechDjoin\\SmallApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arya Maharta",
+            "email": "aryamhrt@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
