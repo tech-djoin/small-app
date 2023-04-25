@@ -1,6 +1,12 @@
 <?php
 
-Route::prefix('small-app')->group(function () {
+use Illuminate\Routing\Router;
+use Illuminate\Support\Facades\Route;
+
+Route::group([
+    'prefix'        => config('admin.route.prefix') . '/small-app',
+    'middleware'    => config('admin.route.middleware'),
+], function (Router $router) {
     Route::get('/', function(){
 		echo 'Hello from the my first package!';
 	});
